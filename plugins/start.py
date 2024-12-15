@@ -91,6 +91,10 @@ async def start_command(client: Client, message: Message):
                     InlineKeyboardButton('🍁 Join Vip', url='https://t.me/cumasiska')
         
     ]
+                
+    [
+                    InlineKeyboardButton("❌ Tutup Menu", callback_data = "close")
+    ]
             ]
         )
         await message.reply_text(
@@ -124,7 +128,7 @@ async def not_joined(client: Client, message: Message):
         [
             InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink2),
             InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink3),
-        ],
+        ]
         [
             InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink),
         ]
@@ -133,7 +137,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = '• ɴᴏᴡ ᴄʟɪᴄᴋ ʜᴇʀᴇ •',
+                    text = '• Coba lagi •',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
